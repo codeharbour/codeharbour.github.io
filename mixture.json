@@ -1,0 +1,41 @@
+{
+	"autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 versions"
+  ],
+  "sourceMap": true
+  },
+  "convertHtml": {
+    "relativePaths": false
+  },
+  "customRubyPath": null,
+  "debug": true,
+  "domain": null,
+  "followLeader": false,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": [
+    "assets"
+  ],
+  "preprocessorScriptOutput": "assets/js",
+  "preprocessorStyleOutput": "assets/css",
+  "projectDescription": null,
+  "projectName": "codeHarbour",
+  "publishedId": null,
+  "sass": {
+    "globbing": true,
+    "lineNumbers": false,
+    "outputStyle": "nested",
+    "sourceMap": true,
+    "useLibSass": false
+  },
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": "http://codeharbour.co.uk",
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "simple",
+  "useCompass": false
+}
