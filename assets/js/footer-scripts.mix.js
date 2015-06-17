@@ -1,5 +1,2 @@
 @import "../lib/fastclick/fastclick.js";
-
-jQuery(document).ready( function($) {
-	
-})
+@import "_waves.js";
