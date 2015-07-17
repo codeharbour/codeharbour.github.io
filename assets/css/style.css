@@ -1298,6 +1298,31 @@ article h2 {
   font-size: 1em;
   margin: 0; }
 
+/* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_profile.scss */
+.profile {
+  margin-top: -1em; }
+  /* line 4, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_profile.scss */
+  .profile .profile__img {
+    height: 7em;
+    width: 7em;
+    border: 1em solid #ddd;
+    border-radius: 50%;
+    float: left;
+    margin: -1em 1em 1em 0; }
+  /* line 13, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_profile.scss */
+  .profile .profile__name {
+    margin-top: 2em; }
+
+/* line 21, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_profile.scss */
+.talk--snippet .profile .profile__img {
+  height: 5em;
+  width: 5em;
+  border: .5em solid #ddd; }
+
+/* line 32, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_profile.scss */
+.organiser .profile__img {
+  margin: 1em 1em 1em 0; }
+
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
 .section {
   overflow: hidden;
@@ -1336,27 +1361,6 @@ article h2 {
   height: auto;
   float: left;
   margin: 0 2em 2em 0; }
-
-/* line 3, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_talk.scss */
-.talk .speaker {
-  margin-top: -1em; }
-  /* line 6, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_talk.scss */
-  .talk .speaker .speaker__img {
-    height: 7em;
-    width: 7em;
-    border: 1em solid #ddd;
-    border-radius: 50%;
-    float: left;
-    margin: -1em 1em 1em 0; }
-  /* line 15, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_talk.scss */
-  .talk .speaker .speaker__name {
-    margin-top: 2em; }
-
-/* line 24, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_talk.scss */
-.talk--snippet .speaker .speaker__img {
-  height: 5em;
-  width: 5em;
-  border: .5em solid #ddd; }
 
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_waves.scss */
 .waves {

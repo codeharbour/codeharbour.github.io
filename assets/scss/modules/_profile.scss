@@ -1,0 +1,35 @@
+.profile {
+  margin-top: -1em;
+
+  .profile__img {
+	height: 7em;
+	width: 7em;
+	border: 1em solid #ddd;
+	border-radius: 50%;
+	float: left;
+	margin: -1em 1em 1em 0;
+  }
+
+  .profile__name {
+	margin-top: 2em;
+  }
+}
+
+.talk--snippet {
+  .profile {
+
+	.profile__img {
+	  height: 5em;
+	  width: 5em;
+	  border: .5em solid #ddd;
+
+	}
+
+  }
+}
+
+.organiser {
+  .profile__img {
+	margin: 1em 1em 1em 0;
+  }
+}
