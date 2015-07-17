@@ -3,46 +3,179 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header class="site-header row">
-		<h1>codeHarbour</h1>
-		<h2>Web meetups <strike>by</strike> near the seaside</h2>
-		<p>codeHarbour is a web focused meetup group in southern Kent. Every month we meet to share ideas, stories and techniques around design and development of websites and web apps.</p>
-		<div class="waves">
-			<div class="wave wave_1"></div>
-			<div class="wave wave_2"></div>
-			<div class="wave wave_3"></div>
-			<div class="wave wave_4"></div>
-			<div class="wave wave_5"></div>
+	<header class="site-header">
+		<div class="site-header__text row">
+			<h1 class="logo">codeHarbour</h1>
+			<h2 class="headline">Web meetups <strike>by</strike> near the seaside</h2>
+			<p class="description">codeHarbour is a web focused meetup group in southern Kent. Every month we meet to share ideas, stories and techniques around design and development of websites and web apps.</p>
 		</div>
 	</header>
 
-	<section class="section section--primary row">
-		<h1 class="section--title">Next meetup</h1>
-		<article>
-			<header>
-				<h1>Progressive enhancement</h1>
-				<h2>with Adam Onishi</h2>
+	<div class="waves">
+		<div class="wave wave_1"></div>
+		<div class="wave wave_2"></div>
+		<div class="wave wave_3"></div>
+		<div class="wave wave_4"></div>
+		<div class="wave wave_5"></div>
+		<a class="btn btn--cta" href="http://www.meetup.com/codeharbour/">Join us</a>
+	</div>
+
+	<section class="section ">
+		<div class="row">
+
+			<header class="section__header">
+				<h1 class="section__title">Next meetup</h1>
+				<p>Time: 5pm - 9pm<br>
+				<a href="#map-canvas">Location</a>
+				</p>
+				<a class="btn" href="http://www.meetup.com/codeharbour/events/223514058/">RSVP</a>
 			</header>
 
-			<div class="meta">
-				<p>Date: 2th July 2015</p>
-				<p>Time: 7pm</p>
+			<article class="talk section__content">
+				<h1>Building in ES6 with jspm and SystemJS</h1>
+				<div class="speaker">
+					<img class="speaker__img" src="../assets/img/jack.jpeg">
+					<h2 class="speaker__name">with Jack Franklin</h2>
+				</div>
+
+				<p>In this talk I'll demonstrate how it is possible to architect and write complex client side JavaScript applications in ECMAScript 6 today, despite a lack of implementations across browsers. We'll explore how we can use libraries like SystemJS and Babel to allow us to seamlessly write code in ES6 and consume 3rd party libraries, regardless of the format they are written in. We'll then architect the application as a series of modules using the new ES6 module syntax, and write using new ES6 features like constants, arrow functions, classes and more.</p>
+
+					<p>Using jspm [jspm.io] as our build tool, we'll see how to quickly and easily install libraries from npm and GitHub, and have them work out of the box in the browser. We'll look at the developer workflow and how jspm also makes it trivial to bundle our application up in production. </p>
+
+			</article>
+
+			<article class="talk section__content">
+				<h1>Get more from Git/GitHub </h1>
+				<div class="speaker">
+					<img class="speaker__img" src="../assets/img/zach.png">
+					<h2 class="speaker__name">with Zach Holman</h2>
+				</div>
+
+				<p>Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
+
+			</article>
+
+
+
+		</div>
+	</section>
+
+	<div id="map_canvas"></div>
+
+
+	<section class="section section--secondary">
+		<div class="row">
+			<header class="section__header">
+				<h1 class="section__title">Finding us</h1>
+			</header>
+
+			<div class="section__content">
+				<p>We&rsquo;re hosted by the good people at Holiday Extras. The address is:<br>
+					<address>Holiday Extras<br>
+					Ashford Rd<br>
+					Newingreen<br>
+					Kent, CT21 4JF</address>
+				</p>
+
+				<h2>From London</h2>
+
+				<p>The HS1 fast train gets you to Ashford. From there you can jump on the next train to Sandling. Send us a message on the meetup.com page - we might be able to give you a lift from Ashford.</p>
+
+				<h2>When you arrive at HX</h2>
+
+				<p>There&rsquo;s a car park here. The door to the meetups is around the side - walk past the main front door, take a right at the end of the building and there will be a door on your right. Look for people with pizza and beer.</p>
 			</div>
 
-			<div>
-				<p>A bit of blurb about the talk goes here. A bit of blurb about the talk goes here. A bit of blurb about the talk goes here. A bit of blurb about the talk goes here.</p>
+		</div>
+	</section>
+
+
+	<section class="section section--primary ">
+		<div class="row">
+			<header class="section__header">
+				<h1 class="section__title">Sponsors</h1>
+			</header>
+
+			<div class="section__content">
+
+				<div class="sponsor">
+					<h2 class="sponsor__name">Holiday Extras</h2>
+					<a href="http://www.holidayextras.co.uk/"><img class="sponsor__logo" src="../assets/img/holidayextras.jpg"></a>
+					<p>Holiday Extras is the UK market leader for travel add-ons, and one of the biggest tech firms in Kent. HX have been a keen supporter of codeHarbour from the start, and we're very proud to now have them as our primary sponsor and host.</p>
+				</div>
+
 			</div>
 
-		</article>
+		</div>
 	</section>
 
 	<section class="section section--secondary">
-			<h1 class="section--title">Getting here</h1>
-
+		<h1>Archive</h1>
 	</section>
 
+	<footer>
+
+	</footer>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		var bittersMap = (function () {
+			var myLatlng = new google.maps.LatLng(51.0856003,1.0350555),
+					mapCenter = new google.maps.LatLng(51.0856003,1.0350555),
+					mapCanvas = document.getElementById('map_canvas'),
+					mapOptions = {
+						center: mapCenter,
+						zoom: 13,
+						scrollwheel: false,
+						draggable: true,
+						disableDefaultUI: true,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					},
+					map = new google.maps.Map(mapCanvas, mapOptions),
+					contentString =
+							'<div id="content">'+
+							'<div id="siteNotice">'+
+							'</div>'+
+							'<h1 id="firstHeading" class="firstHeading">codeHarbour</h1>'+
+							'<div id="bodyContent"'+
+							'<p>Holiday Extras</p>'+
+							'</div>'+
+							'</div>',
+					infowindow = new google.maps.InfoWindow({
+						content: contentString,
+						maxWidth: 300
+					}),
+					marker = new google.maps.Marker({
+						position: myLatlng,
+						map: map,
+						title: 'thoughtbot (Sweden)'
+					});
+
+			return {
+				init: function () {
+					map.set('styles', [{
+						featureType: 'landscape',
+						elementType: 'geometry',
+						stylers: [
+							{ hue: '#ffff00' },
+							{ saturation: 30 },
+							{ lightness: 10}
+						]}
+					]);
+
+					google.maps.event.addListener(marker, 'click', function () {
+						infowindow.open(map,marker);
+					});
+				}
+			};
+		}());
+
+		bittersMap.init();
+	</script>
 </body>
 <script src="assets/js/footer-scripts.js"></script>
 </html>

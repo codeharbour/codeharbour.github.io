@@ -1,0 +1,19 @@
+.talk {
+
+  .speaker {
+	margin-top: -1em;
+
+	.speaker__img {
+	  height: 7em;
+	  width: 7em;
+	  border: 1em solid #ddd;
+	  border-radius: 50%;
+	  float: left;
+	  margin: -1em 1em 1em 0;
+	}
+
+	.speaker__name {
+	  margin-top: 2em;
+	}
+  }
+}

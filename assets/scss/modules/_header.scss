@@ -1,0 +1,25 @@
+.site-header {
+  background: #163D6A;
+  color: white;
+
+  .logo {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	line-height: 2em;
+  }
+
+  .headline {
+	font-size: 4em;
+	text-align: center;
+	color: white;
+	margin: 1em;
+  }
+
+  .description {
+	max-width: 45em;
+	text-align: center;
+	margin: 0 auto;
+  }
+
+}

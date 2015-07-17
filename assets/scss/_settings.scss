@@ -12,6 +12,7 @@ $grey55: darken($white, 55%);
 $grey70: darken($white, 70%);
 $grey85: darken($white, 85%);
 
+$navy: #163D6A;
 $primary: #44B5C4;
 $secondary: #7ECECA;
 $copy: $black;
@@ -27,7 +28,7 @@ $footer-copy: $grey25;
     Variables
 \*------------------------------------*/
 
-$copy-face: sans-serif;
+$copy-face: 'Lato', sans-serif;
 $headings-face: $copy-face;
 
 /*------------------------------------*\
@@ -46,7 +47,7 @@ $max-width: $bp-xl;
 $start-columns 						: $bp-xs;
 
 // fonts
-$default-font-size: .875em;
+$default-font-size: 1.25em;
 $footer-font-size: $default-font-size;
 
 // spacing

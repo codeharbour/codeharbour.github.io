@@ -5,6 +5,7 @@
   min-height:10em;
   position:relative;
   overflow:hidden;
+  text-align: center;
 }
 
 .wave
@@ -110,4 +111,11 @@
 {
   from { transform: rotate(0deg)   translatey(-1.5em) rotate(0deg)    ; }
   to   { transform: rotate(360deg) translatey(-1.5em) rotate(-360deg) ; }
+}
+
+
+.btn--cta {
+  position: relative;
+  z-index: 6;
+
 }
