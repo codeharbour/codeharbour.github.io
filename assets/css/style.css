@@ -1240,6 +1240,11 @@ article h2 {
   border-bottom: 0.25em solid #59c0bb; }
 
 /* line 10, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_buttons.scss */
+.btn--primary {
+  background: #44B5C4;
+  border-color: #3395a2; }
+
+/* line 15, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_buttons.scss */
 .btn--cta {
   font-size: 2em;
   margin: 2em 0;
