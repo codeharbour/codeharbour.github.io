@@ -1,5 +1,9 @@
 .section {
 
+  & > h1 {
+    text-align: center;
+  }
+
   overflow: hidden;
   padding: 4em 0;
 
