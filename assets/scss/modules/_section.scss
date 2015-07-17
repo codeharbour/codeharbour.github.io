@@ -1,7 +1,7 @@
 .section {
 
   overflow: hidden;
-  padding: 2em 0;
+  padding: 4em 0;
 
   &.section--primary {
 	background-color: $primary;
@@ -11,7 +11,21 @@
 	background-color: $secondary;
   }
 
-  .section--title {
+  .section__header {
+    width: 38%;
+    float: left;
+    padding: 2em;
+    text-align: right;
+  }
+
+  .section__title {
 	font-size: 3em;
+    text-align: right;
+  }
+
+  .section__content {
+    width: 62%;
+    float: right;
+    padding: 2em;
   }
 }
