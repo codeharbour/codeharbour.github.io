@@ -1,0 +1,4 @@
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/
