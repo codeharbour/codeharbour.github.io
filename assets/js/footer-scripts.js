@@ -826,5 +826,3 @@
 		window.FastClick = FastClick;
 	}
 }());
-
-/* File does not exist: _waves.js not imported */
