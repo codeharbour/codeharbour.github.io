@@ -96,23 +96,3 @@
 	}
 	
 }
-
-@mixin grid {	
-	// Widths
-	*[class*="span"] {
-		width: 100%; 
-		display: block;
-	}
-	// Floats
-	*[class*="as-grid"] {
-		float: left;
-		display: inline;
-		display: inline-block;
-	}
-	// Gutters
-	*[class*="with-gutter"] {
-		@include mq($start-columns, true) {
-			padding-left: $spacing-percent; 
-		}
-	}
-}

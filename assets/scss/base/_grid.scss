@@ -1,4 +1,8 @@
-@include grid;	// Include the grid mixin
+[class*="span"] {
+	width: 100%; 
+	display: block;
+	float: left;
+}
 
 // ------------------------------------------------------------
 
@@ -8,35 +12,31 @@
 // You can use multiple grid denominations within each breakpoint, but each breakpoint must have unique column set-up
 // For example, you can have a 6 and 8 column grid at breakpoint b, but you can't use 6 or eight columns in other breakpoints
 .row {
-	@extend %cf;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-
+	max-width: $max-width;
+	
+	& ~ .row {
+		padding-top: 0;
+	}
 	
 	@include mq($bp-s) { 
-		min-width: $bp-s;
 		@include grid-columns(4); 	// Two column grid
 	}
 	
 	@include mq($bp-m) { 
-		min-width: $bp-m;
 		@include grid-columns(6);	// Six column grid
 	}
 	
 	@include mq($bp-l) { 
-		min-width: $bp-l;
 		@include grid-columns(8);	// Eight column grid
 	}
 	
 	@include mq($bp-xl) { 
-		min-width: $bp-xl;
 		@include grid-columns(12);	// Twelve column grid
 	}
 	
-	@include mq($bp-xxl) { 
-		width: $bp-xxl;
-	}
 
 	// IE less than 9 
 	.lt-ie9 & {
@@ -45,12 +45,28 @@
 	}
 }
 
-.row--pad {
-	padding: $spacing $spacing/2;
+.row__colspaced {
+	position: relative;
+	@extend %cf;
+	margin-left: -$spacing/2;
+	margin-right: -$spacing/2;
+	
+	[class*="span"] {
+		padding-left: $spacing/2;	
+		padding-right: $spacing/2;			
+	}
+}
 
-	@include mq($bp-m, true) { 
+.row--pad {
+	padding: $spacing;
+
+	@include mq($bp-m) { 
 		padding: $spacing*2 $spacing;
-	}	
+	}
+	
+	@include mq($bp-l, true) { 
+		padding: $spacing*3 $spacing;
+	}
 	
 	& ~ .row--pad {
 		padding-top: 0;
@@ -58,20 +74,21 @@
 	
 }
 
-// Drag row left to allow for equal spaced grid. AKA gutters
-// Gutters set in mixins.scss file
-.row__colspaced {
-	position: relative;
-	@extend %cf;
-	
-	@include mq($start-columns) {			
-		min-width: (100% + $spacing-percent); 	
-		left: -$spacing-percent; 	
-	}
-	
-	.lt-ie9 & { 
-		max-width: 100%; 
-		min-width: auto; 
-		left: auto; 
+.row--no-top-pad {
+	padding-top: 0;
+}
+
+.row--no-bottom-pad {
+	padding-bottom: 0;
+}
+
+.row--wide {
+
+	@include mq-min-max(0, $bp-l) {	
+
+		.row__colspaced  {
+			margin-left: -$spacing*1.5;
+			margin-right: -$spacing*1.5;
+		}
 	}
 }
