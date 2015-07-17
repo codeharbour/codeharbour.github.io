@@ -1223,6 +1223,16 @@ article h1 {
 article h2 {
   font-size: 1.5em; }
 
+/* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_box.scss */
+.box {
+  background: #eee;
+  padding: 2em;
+  margin: 2em 0;
+  text-align: left; }
+  /* line 8, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_box.scss */
+  .box .box__title {
+    margin-top: 0px; }
+
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_buttons.scss */
 .btn {
   display: inline-block;
