@@ -5,17 +5,3 @@
   margin: 0px;
   overflow: hidden;
 }
-
-.section {
-
-  overflow: hidden;
-  padding: 2em 0;
-
-  &.section--primary {
-    background-color: $primary;
-  }
-
-  &.section--secondary {
-    background-color: $secondary;
-  }
-}

@@ -1223,6 +1223,27 @@ small, .font_small {
   font-size: 75%; }
 
 /* No files to import found in templates/* */
+/* line 3, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_article.scss */
+article h1 {
+  font-size: 2em; }
+/* line 7, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_article.scss */
+article h2 {
+  font-size: 1.5em; }
+
+/* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+.section {
+  overflow: hidden;
+  padding: 2em 0; }
+  /* line 6, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+  .section.section--primary {
+    background-color: #44B5C4; }
+  /* line 10, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+  .section.section--secondary {
+    background-color: #7ECECA; }
+  /* line 14, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+  .section .section--title {
+    font-size: 3em; }
+
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_waves.scss */
 .site-header {
   position: relative;
@@ -1230,17 +1251,6 @@ small, .font_small {
   height: 500px;
   margin: 0px;
   overflow: hidden; }
-
-/* line 9, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_waves.scss */
-.section {
-  overflow: hidden;
-  padding: 2em 0; }
-  /* line 14, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_waves.scss */
-  .section.section--primary {
-    background-color: #44B5C4; }
-  /* line 18, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_waves.scss */
-  .section.section--secondary {
-    background-color: #7ECECA; }
 
 /* No files to import found in ../lib/*\/* */
 
