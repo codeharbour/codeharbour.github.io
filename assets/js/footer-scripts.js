@@ -826,8 +826,3 @@
 		window.FastClick = FastClick;
 	}
 }());
-
-
-jQuery(document).ready( function($) {
-	
-})
