@@ -2,3 +2,9 @@ collections:
   talks:
     output: true
     permalink: /talks/:name/
+
+defaults:
+  scope:
+    path: ""
+    values:
+      layout: "default"

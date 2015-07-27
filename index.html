@@ -1,286 +1,169 @@
-<!doctype html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<header class="site-header">
-		<div class="site-header__text row">
-			<h1 class="logo">codeHarbour</h1>
-			<h2 class="headline">Web meetups <strike>by</strike> near the seaside</h2>
-			<p class="description">codeHarbour is a web focused meetup group in southern Kent. Every month we meet to share ideas, stories and techniques around design and development of websites and web apps.</p>
-		</div>
-	</header>
+---
+layout: default
+---
+<section class="section ">
+	<div class="row">
 
-	<div class="waves">
-		<div class="wave wave_1"></div>
-		<div class="wave wave_2"></div>
-		<div class="wave wave_3"></div>
-		<div class="wave wave_4"></div>
-		<div class="wave wave_5"></div>
-		<a class="btn btn--cta" href="http://www.meetup.com/codeharbour/">Join us</a>
+		<header class="section__header">
+			<h1 class="section__title">Next meetup</h1>
+			<p>Time: 5pm - 9pm<br>
+			<a href="#map_canvas">Location</a>
+			</p>
+			<a class="btn" href="http://www.meetup.com/codeharbour/events/223514058/">RSVP</a>
+
+			<div class="box">
+				<h3 class="box__title">What to expect</h3>
+				<p>We start the meetups with a bit of general socialising. Food and drink is provided, so don't worry about eating first (unless you don't like pizza!).</p>
+			</div>
+		</header>
+
+		<article class="talk section__content">
+			<h1>Building in ES6 with jspm and SystemJS</h1>
+			<div class="speaker profile">
+				<img class="profile__img" src="../assets/img/jack.jpeg">
+				<h2 class="profile__name">with Jack Franklin</h2>
+			</div>
+
+			<p>In this talk I'll demonstrate how it is possible to architect and write complex client side JavaScript applications in ECMAScript 6 today, despite a lack of implementations across browsers. We'll explore how we can use libraries like SystemJS and Babel to allow us to seamlessly write code in ES6 and consume 3rd party libraries, regardless of the format they are written in. We'll then architect the application as a series of modules using the new ES6 module syntax, and write using new ES6 features like constants, arrow functions, classes and more.</p>
+
+			<p>Using jspm [jspm.io] as our build tool, we'll see how to quickly and easily install libraries from npm and GitHub, and have them work out of the box in the browser. We'll look at the developer workflow and how jspm also makes it trivial to bundle our application up in production. </p>
+
+		</article>
+
+		<article class="talk section__content">
+			<h1>Get more from Git/GitHub </h1>
+			<div class="speaker profile">
+				<img class="profile__img" src="../assets/img/zach.png">
+				<h2 class="profile__name">with Zach Holman</h2>
+			</div>
+
+			<p>Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
+
+		</article>
+
+	</div>
+</section>
+
+<div id="map_canvas"></div>
+
+
+<section class="section section--secondary">
+	<div class="row">
+		<header class="section__header">
+			<h1 class="section__title">Finding us</h1>
+		</header>
+
+		<div class="section__content">
+			<p>We&rsquo;re hosted by the good people at Holiday Extras. The address is:<br>
+				<address>Holiday Extras<br>
+				Ashford Rd<br>
+				Newingreen<br>
+				Kent, CT21 4JF</address>
+			</p>
+
+			<h2>From London</h2>
+
+			<p>The HS1 fast train gets you to Ashford. From there you can jump on the next train to Westenhanger. Send us a message on the meetup.com page - we might be able to give you a lift from Ashford.</p>
+
+			<h2>When you arrive at HX</h2>
+
+			<p>There&rsquo;s a car park here. The door to the meetups is around the side - walk past the main front door, take a right at the end of the building and there will be a door on your right. Look for people with pizza and beer.</p>
+		</div>
+
+	</div>
+</section>
+
+
+<section class="section ">
+	<div class="row">
+		<header class="section__header">
+			<h1 class="section__title">Sponsors</h1>
+		</header>
+
+		<div class="section__content">
+
+			<div class="sponsor">
+				<h2 class="sponsor__name">Holiday Extras</h2>
+				<a href="http://www.holidayextras.co.uk/"><img class="sponsor__logo" src="../assets/img/holidayextras.jpg"></a>
+				<p>Holiday Extras is the UK market leader for travel add-ons, and one of the biggest tech firms in Kent. HX have been a keen supporter of codeHarbour from the start, and we're very proud to now have them as our primary sponsor and host.</p>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section class="section section--primary">
+	<h1>Previous talks</h1>
+
+	<div class="row row--pad">
+		<div class="row__colspaced">
+
+			<div class="span4-4 span6-3 span12-4">
+				<article class="talk talk--snippet ">
+					<h1>Best viewed with...</h1>
+					<div class="speaker profile">
+						<img class="profile__img" src="../assets/img/adam_onishi.jpg">
+						<h2 class="profile__name">with Adam Onishi</h2>
+					</div>
+						<p class="blurb">Are we doomed to see history repeat itself? Is our fascination with new tools going to break the inherent robustness of the web we know? Or, can these new tools help us progressively enhance the web even further than we are able to now?</p>
+
+						<p>My aim is to take a look at the current state of the web and whether progressive enhancement is still plausible. Looking beyond whether a website works with JavaScript turned off or not. Instead looking at what new tools can offer and especially what game changing software is coming in the near future.</p>
+					<a class="btn " href="#">Video</a>
+					<a class="btn " href="#">Slides</a>
+				</article>
+			</div>
+
+			<div class="span4-4 span6-3 span12-4">
+				<article class="talk talk--snippet">
+					<h1>The importance od side projects, part 2</h1>
+					<div class="profile speaker">
+						<img class="profile__img" src="../assets/img/pete.jpeg">
+						<h2 class="profile__name">with Pete Nelson</h2>
+					</div>
+					<a class="btn " href="#">Video</a>
+				</article>
+			</div>
+
+			<div class="span4-4 span6-3 span12-4">
+				<article class="talk talk--snippet">
+					<h1>Get more from Git/GitHub</h1>
+					<div class="profile speaker">
+						<img class="profile__img" src="../assets/img/zach.png">
+						<h2 class="profile__name">with Zach Holman</h2>
+					</div>
+					<p class="blurb">Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
+					<a class="btn" href="#">Video</a>
+					<a class="btn" href="#">Slides</a>
+				</article>
+			</div>
+
+		</div>
+
 	</div>
 
-	<section class="section ">
-		<div class="row">
+	<p class="centered">
+		<a class="btn btn--cta" href="/archive">View the archive</a>
+	</p>
 
-			<header class="section__header">
-				<h1 class="section__title">Next meetup</h1>
-				<p>Time: 5pm - 9pm<br>
-				<a href="#map_canvas">Location</a>
-				</p>
-				<a class="btn" href="http://www.meetup.com/codeharbour/events/223514058/">RSVP</a>
+</section>
 
-				<div class="box">
-					<h3 class="box__title">What to expect</h3>
-					<p>We start the meetups with a bit of general socialising. Food and drink is provided, so don't worry about eating first (unless you don't like pizza!).</p>
-				</div>
-			</header>
+<section class="section section--secondary">
 
-			<article class="talk section__content">
-				<h1>Building in ES6 with jspm and SystemJS</h1>
-				<div class="speaker profile">
-					<img class="profile__img" src="../assets/img/jack.jpeg">
-					<h2 class="profile__name">with Jack Franklin</h2>
-				</div>
+	<div class="row row--pad">
 
-				<p>In this talk I'll demonstrate how it is possible to architect and write complex client side JavaScript applications in ECMAScript 6 today, despite a lack of implementations across browsers. We'll explore how we can use libraries like SystemJS and Babel to allow us to seamlessly write code in ES6 and consume 3rd party libraries, regardless of the format they are written in. We'll then architect the application as a series of modules using the new ES6 module syntax, and write using new ES6 features like constants, arrow functions, classes and more.</p>
+		<div class="row__colspaced">
 
-				<p>Using jspm [jspm.io] as our build tool, we'll see how to quickly and easily install libraries from npm and GitHub, and have them work out of the box in the browser. We'll look at the developer workflow and how jspm also makes it trivial to bundle our application up in production. </p>
-
-			</article>
-
-			<article class="talk section__content">
-				<h1>Get more from Git/GitHub </h1>
-				<div class="speaker profile">
-					<img class="profile__img" src="../assets/img/zach.png">
-					<h2 class="profile__name">with Zach Holman</h2>
-				</div>
-
-				<p>Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
-
-			</article>
-
-		</div>
-	</section>
-
-	<div id="map_canvas"></div>
-
-
-	<section class="section section--secondary">
-		<div class="row">
-			<header class="section__header">
-				<h1 class="section__title">Finding us</h1>
-			</header>
-
-			<div class="section__content">
-				<p>We&rsquo;re hosted by the good people at Holiday Extras. The address is:<br>
-					<address>Holiday Extras<br>
-					Ashford Rd<br>
-					Newingreen<br>
-					Kent, CT21 4JF</address>
-				</p>
-
-				<h2>From London</h2>
-
-				<p>The HS1 fast train gets you to Ashford. From there you can jump on the next train to Westenhanger. Send us a message on the meetup.com page - we might be able to give you a lift from Ashford.</p>
-
-				<h2>When you arrive at HX</h2>
-
-				<p>There&rsquo;s a car park here. The door to the meetups is around the side - walk past the main front door, take a right at the end of the building and there will be a door on your right. Look for people with pizza and beer.</p>
+			<div class="span4-2 span6-3 span12-6">
+				<a href="https://www.youtube.com/channel/UCUOjGIKzXcDP6pPxSYoRW-g"><img src="assets/img/youtube.png"></a>
 			</div>
 
-		</div>
-	</section>
-
-
-	<section class="section ">
-		<div class="row">
-			<header class="section__header">
-				<h1 class="section__title">Sponsors</h1>
-			</header>
-
-			<div class="section__content">
-
-				<div class="sponsor">
-					<h2 class="sponsor__name">Holiday Extras</h2>
-					<a href="http://www.holidayextras.co.uk/"><img class="sponsor__logo" src="../assets/img/holidayextras.jpg"></a>
-					<p>Holiday Extras is the UK market leader for travel add-ons, and one of the biggest tech firms in Kent. HX have been a keen supporter of codeHarbour from the start, and we're very proud to now have them as our primary sponsor and host.</p>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-
-	<section class="section section--primary">
-		<h1>Previous talks</h1>
-
-		<div class="row row--pad">
-			<div class="row__colspaced">
-
-				<div class="span4-4 span6-3 span12-4">
-					<article class="talk talk--snippet ">
-						<h1>Best viewed with...</h1>
-						<div class="speaker profile">
-							<img class="profile__img" src="../assets/img/adam_onishi.jpg">
-							<h2 class="profile__name">with Adam Onishi</h2>
-						</div>
-							<p class="blurb">Are we doomed to see history repeat itself? Is our fascination with new tools going to break the inherent robustness of the web we know? Or, can these new tools help us progressively enhance the web even further than we are able to now?</p>
-
-							<p>My aim is to take a look at the current state of the web and whether progressive enhancement is still plausible. Looking beyond whether a website works with JavaScript turned off or not. Instead looking at what new tools can offer and especially what game changing software is coming in the near future.</p>
-						<a class="btn " href="#">Video</a>
-						<a class="btn " href="#">Slides</a>
-					</article>
-				</div>
-
-				<div class="span4-4 span6-3 span12-4">
-					<article class="talk talk--snippet">
-						<h1>The importance od side projects, part 2</h1>
-						<div class="profile speaker">
-							<img class="profile__img" src="../assets/img/pete.jpeg">
-							<h2 class="profile__name">with Pete Nelson</h2>
-						</div>
-						<a class="btn " href="#">Video</a>
-					</article>
-				</div>
-
-				<div class="span4-4 span6-3 span12-4">
-					<article class="talk talk--snippet">
-						<h1>Get more from Git/GitHub</h1>
-						<div class="profile speaker">
-							<img class="profile__img" src="../assets/img/zach.png">
-							<h2 class="profile__name">with Zach Holman</h2>
-						</div>
-						<p class="blurb">Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
-						<a class="btn" href="#">Video</a>
-						<a class="btn" href="#">Slides</a>
-					</article>
-				</div>
-
+			<div class="span4-2 span6-3 span12-6">
+				<a href="https://twitter.com/codeharbour"><img src="assets/img/twitter.png"></a>
 			</div>
 
 		</div>
 
-		<p class="centered">
-			<a class="btn btn--cta" href="/archive">View the archive</a>
-		</p>
+	</div>
 
-	</section>
-
-	<section class="section section--secondary">
-
-		<div class="row row--pad">
-
-			<div class="row__colspaced">
-
-				<div class="span4-2 span6-3 span12-6">
-					<a href="https://www.youtube.com/channel/UCUOjGIKzXcDP6pPxSYoRW-g"><img src="assets/img/youtube.png"></a>
-				</div>
-
-				<div class="span4-2 span6-3 span12-6">
-					<a href="https://twitter.com/codeharbour"><img src="assets/img/twitter.png"></a>
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<section class="section section--tertiary">
-
-		<h1>Organised by</h1>
-
-		<div class="row row--pad">
-
-			<div class="row__colspaced">
-
-				<div class="span4-2 span6-3 span12-6">
-
-					<div class="profile organiser">
-						<h4 class="profile__name">Wesley Burden</h4>
-						<img class="profile__img" src="assets/img/wesley.jpeg">
-						<p class="profile__bio">Web chappy, dad, partner to @idoodledo, owner of @nebulodesign and co-organiser of @codeHarbour</p>
-						<p><a href="https://twitter.com/wesleyburden">@wesleyburden</a> | <a href="http://nebulodesign.com/">nebulodesign.com</a></p>
-					</div>
-
-				</div>
-
-				<div class="span4-2 span6-3 span12-6">
-
-					<div class="profile organiser">
-						<h4 class="profile__name">Keith Devon</h4>
-						<img class="profile__img" src="assets/img/keith.jpeg">
-						<p class="profile__bio">Keith builds results focused websites for medium sized businesses who wnat to improve their web ROI. When he's not working he's usually on his bike.</p>
-						<p><a href="https://twitter.com/keithdevon">@keithdevon</a> | <a href="http://keithdevon.com">keithdevon.com</a></p>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-
-
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
-		var bittersMap = (function () {
-			var myLatlng = new google.maps.LatLng(51.0856003,1.0350555),
-					mapCenter = new google.maps.LatLng(51.0856003,1.0350555),
-					mapCanvas = document.getElementById('map_canvas'),
-					mapOptions = {
-						center: mapCenter,
-						zoom: 13,
-						scrollwheel: false,
-						draggable: true,
-						disableDefaultUI: true,
-						mapTypeId: google.maps.MapTypeId.ROADMAP
-					},
-					map = new google.maps.Map(mapCanvas, mapOptions),
-					contentString =
-							'<div id="content">'+
-							'<div id="siteNotice">'+
-							'</div>'+
-							'<h1 id="firstHeading" class="firstHeading">codeHarbour</h1>'+
-							'<div id="bodyContent"'+
-							'<p>Holiday Extras</p>'+
-							'</div>'+
-							'</div>',
-					infowindow = new google.maps.InfoWindow({
-						content: contentString,
-						maxWidth: 300
-					}),
-					marker = new google.maps.Marker({
-						position: myLatlng,
-						map: map,
-						title: 'thoughtbot (Sweden)'
-					});
-
-			return {
-				init: function () {
-					map.set('styles', [{
-						featureType: 'landscape',
-						elementType: 'geometry',
-						stylers: [
-							{ hue: '#ffff00' },
-							{ saturation: 30 },
-							{ lightness: 10}
-						]}
-					]);
-
-					google.maps.event.addListener(marker, 'click', function () {
-						infowindow.open(map,marker);
-					});
-				}
-			};
-		}());
-
-		bittersMap.init();
-	</script>
-</body>
-<script src="assets/js/footer-scripts.js"></script>
-</html>
+</section>
