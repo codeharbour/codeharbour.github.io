@@ -6,27 +6,11 @@
 
 		<div class="row__colspaced">
 
-			<div class="span4-2 span6-3 span12-6">
-
-				<div class="profile organiser">
-					<h4 class="profile__name">Wesley Burden</h4>
-					<img class="profile__img" src="assets/img/wesley.jpeg">
-					<p class="profile__bio">Web chappy, dad, partner to @idoodledo, owner of @nebulodesign and co-organiser of @codeHarbour</p>
-					<p><a href="https://twitter.com/wesleyburden">@wesleyburden</a> | <a href="http://nebulodesign.com/">nebulodesign.com</a></p>
-				</div>
-
+			{% for organiser in site.data.organisers %}
+			<div class="span4-4 span6-3 span12-6">
+				{% include organiser.html %}
 			</div>
-
-			<div class="span4-2 span6-3 span12-6">
-
-				<div class="profile organiser">
-					<h4 class="profile__name">Keith Devon</h4>
-					<img class="profile__img" src="assets/img/keith.jpeg">
-					<p class="profile__bio">Keith builds results focused websites for medium sized businesses who wnat to improve their web ROI. When he's not working he's usually on his bike.</p>
-					<p><a href="https://twitter.com/keithdevon">@keithdevon</a> | <a href="http://keithdevon.com">keithdevon.com</a></p>
-				</div>
-
-			</div>
+			{% endfor %}
 
 		</div>
 	</div>
