@@ -1,4 +1,0 @@
----
----
-#Talk title
-talk content

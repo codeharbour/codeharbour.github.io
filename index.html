@@ -6,6 +6,7 @@ layout: default
 
 		<header class="section__header">
 			<h1 class="section__title">Next meetup</h1>
+			<p>Date: 5th August 2015</p>
 			<p>Time: 5pm - 9pm<br>
 			<a href="#map_canvas">Location</a>
 			</p>
@@ -16,30 +17,11 @@ layout: default
 				<p>We start the meetups with a bit of general socialising. Food and drink is provided, so don't worry about eating first (unless you don't like pizza!).</p>
 			</div>
 		</header>
-
-		<article class="talk section__content">
-			<h1>Building in ES6 with jspm and SystemJS</h1>
-			<div class="speaker profile">
-				<img class="profile__img" src="../assets/img/jack.jpeg">
-				<h2 class="profile__name">with Jack Franklin</h2>
-			</div>
-
-			<p>In this talk I'll demonstrate how it is possible to architect and write complex client side JavaScript applications in ECMAScript 6 today, despite a lack of implementations across browsers. We'll explore how we can use libraries like SystemJS and Babel to allow us to seamlessly write code in ES6 and consume 3rd party libraries, regardless of the format they are written in. We'll then architect the application as a series of modules using the new ES6 module syntax, and write using new ES6 features like constants, arrow functions, classes and more.</p>
-
-			<p>Using jspm [jspm.io] as our build tool, we'll see how to quickly and easily install libraries from npm and GitHub, and have them work out of the box in the browser. We'll look at the developer workflow and how jspm also makes it trivial to bundle our application up in production. </p>
-
-		</article>
-
-		<article class="talk section__content">
-			<h1>Get more from Git/GitHub </h1>
-			<div class="speaker profile">
-				<img class="profile__img" src="../assets/img/zach.png">
-				<h2 class="profile__name">with Zach Holman</h2>
-			</div>
-
-			<p>Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
-
-		</article>
+		{% assign sorted = site.talks | sort: "pub-date" | reverse %}
+		{% assign numTalks = 2 %}
+		{% for talk in sorted limit:numTalks %}
+			{% include talk-summary.html %}
+		{% endfor %}
 
 	</div>
 </section>
@@ -99,47 +81,13 @@ layout: default
 	<div class="row row--pad">
 		<div class="row__colspaced">
 
+			{% for talk in sorted limit:3 offset:numTalks %}
 			<div class="span4-4 span6-3 span12-4">
-				<article class="talk talk--snippet ">
-					<h1>Best viewed with...</h1>
-					<div class="speaker profile">
-						<img class="profile__img" src="../assets/img/adam_onishi.jpg">
-						<h2 class="profile__name">with Adam Onishi</h2>
-					</div>
-						<p class="blurb">Are we doomed to see history repeat itself? Is our fascination with new tools going to break the inherent robustness of the web we know? Or, can these new tools help us progressively enhance the web even further than we are able to now?</p>
-
-						<p>My aim is to take a look at the current state of the web and whether progressive enhancement is still plausible. Looking beyond whether a website works with JavaScript turned off or not. Instead looking at what new tools can offer and especially what game changing software is coming in the near future.</p>
-					<a class="btn " href="#">Video</a>
-					<a class="btn " href="#">Slides</a>
-				</article>
+				{% include talk-summary.html %}
 			</div>
-
-			<div class="span4-4 span6-3 span12-4">
-				<article class="talk talk--snippet">
-					<h1>The importance od side projects, part 2</h1>
-					<div class="profile speaker">
-						<img class="profile__img" src="../assets/img/pete.jpeg">
-						<h2 class="profile__name">with Pete Nelson</h2>
-					</div>
-					<a class="btn " href="#">Video</a>
-				</article>
-			</div>
-
-			<div class="span4-4 span6-3 span12-4">
-				<article class="talk talk--snippet">
-					<h1>Get more from Git/GitHub</h1>
-					<div class="profile speaker">
-						<img class="profile__img" src="../assets/img/zach.png">
-						<h2 class="profile__name">with Zach Holman</h2>
-					</div>
-					<p class="blurb">Git is a really powerful tool. A lot of that power is deeply hidden, and for good reason: it may only be valuable in certain use cases. You may not run into those use cases very often, but when you do, these lesser-known features might save you literally seconds of time.</p>
-					<a class="btn" href="#">Video</a>
-					<a class="btn" href="#">Slides</a>
-				</article>
-			</div>
+			{% endfor %}
 
 		</div>
-
 	</div>
 
 	<p class="centered">
