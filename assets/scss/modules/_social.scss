@@ -1,0 +1,11 @@
+.social-icon {
+  max-width: em(300);
+  display: block;
+  margin: 0 auto;
+  transition: opacity .3s;
+  opacity: 1;
+
+  &:hover {
+    opacity: .8;
+  }
+}

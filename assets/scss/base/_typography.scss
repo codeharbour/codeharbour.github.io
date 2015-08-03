@@ -21,48 +21,48 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 	font-family: $headings-face;
 	font-weight: bold;
-	color: $headings;  
+	color: $headings;
 }
 
 h1 {
   margin-top: 0;
   font-size: 2.762375em;
-  
+
 	@include mq($bp-s, true) {
   	font-size: 3.157em;
-	}  
+	}
 }
 
 h2 {
 	font-size: 2.072875em;
-	
+
 	@include mq($bp-s, true) {
 	font-size: 2.369em;
-	}	
+	}
 }
 
 h3 {
 	font-size: 1.554875em;
-	
+
 	@include mq($bp-s, true) {
 		font-size: 1.777em;
-	}	
+	}
 }
 
 h4 {
 	font-size: 1.166375em;
-	
+
 	@include mq($bp-s, true) {
 		font-size: 1.333em;
-	}	
+	}
 }
 
 h5 {
 	font-size: .875em;
-	
+
 	@include mq($bp-s, true) {
 		font-size: 1em;
-	}	
+	}
 }
 
 h6 {
@@ -72,10 +72,14 @@ h6 {
 
 p, ul, ol, dl, blockquote, address {
 	margin: $spacing 0 0 0;
-	font-size: $default-font-size;
-	
+	font-size: 1em;
+
 	&:first-child {
 		margin-top: 0;
+	}
+
+	@include mq($bp-s, true) {
+		font-size: $default-font-size;
 	}
 }
 

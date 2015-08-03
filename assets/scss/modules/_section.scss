@@ -4,6 +4,10 @@
     text-align: center;
   }
 
+  .section__title {
+    line-height: 1;
+  }
+
   overflow: hidden;
   padding: 4em 0;
 
@@ -12,24 +16,25 @@
   }
 
   &.section--secondary {
-	background-color: $secondary;
+  	background-color: $secondary;
+
+    a {
+      @include links(darken($secondary, 40%));
+    }
   }
 
   .section__header {
-    width: 38%;
-    float: left;
-    padding: 2em;
-    text-align: right;
-  }
+    text-align: left;
 
-  .section__title {
-	font-size: 3em;
-    text-align: right;
+    @include mq($bp-m) {
+      text-align: right;
+    }
   }
+}
 
-  .section__content {
-    width: 62%;
-    float: right;
-    padding: 2em;
+.section--next-meetup {
+
+  .talk ~ .talk {
+    margin-top: $spacing*2;
   }
 }

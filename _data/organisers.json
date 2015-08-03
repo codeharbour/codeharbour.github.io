@@ -1,0 +1,16 @@
+[
+  {
+      "name": "Wesley Burden",
+      "twitter": "wesleyburden",
+      "img-url": "assets/img/wesley.jpg",
+      "web-url": "http://nebulodesign.com",
+      "bio": "I make websites with a focus on usability, elegance and speed. Also running and bike riding.  That happens quite a lot."
+    },
+  {
+      "name": "Keith Devon",
+      "twitter": "keithdevon",
+      "img-url": "assets/img/keith.jpg",
+      "web-url": "http://keithdevon.com",
+      "bio": "Keith builds results focused websites for medium sized businesses who wnat to improve their web ROI. When he's not working he's usually on his bike."
+  }
+]

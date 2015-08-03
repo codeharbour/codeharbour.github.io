@@ -10,16 +10,23 @@
   }
 
   .headline {
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
 	color: white;
 	margin: 1em;
   }
 
   .description {
-	max-width: 45em;
+	max-width: 28em;
 	text-align: center;
 	margin: 0 auto;
+  }
+
+  @include mq(em(500), true) {
+
+    .headline {
+      font-size: 4em;
+    }
   }
 
 }
