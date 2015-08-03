@@ -1322,6 +1322,12 @@ article h2 {
   font-size: 1em;
   margin: 0; }
 
+/* line 3, /Users/su/Webbly/codeharbour/assets/scss/modules/_meetup-meta.scss */
+.meetup-meta .meetup-meta__item {
+  font-weight: bold;
+  color: #4d4d4d;
+  margin-right: .25em; }
+
 /* line 1, /Users/su/Webbly/codeharbour/assets/scss/modules/_profile.scss */
 .profile {
   margin-top: -1em; }
