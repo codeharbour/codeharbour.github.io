@@ -1,28 +1,32 @@
 ---
 layout: default
 ---
-<section class="section ">
-	<div class="row">
+<section class="section section--next-meetup">
+	<div class="row row--pad">
+		<div class="row__colspaced">
+			<div class="span4-4 span6-2 span8-3 span12-4">
+				<header class="section__header">
+					<h1 class="section__title">Next meetup</h1>
+					<p>Date: 5th August 2015<br>
+							Time: 5pm - 9pm<br>
+					<a href="#map_canvas">Location</a>
+					</p>
+					<a class="btn" href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">RSVP</a>
 
-		<header class="section__header">
-			<h1 class="section__title">Next meetup</h1>
-			<p>Date: 5th August 2015</p>
-			<p>Time: 5pm - 9pm<br>
-			<a href="#map_canvas">Location</a>
-			</p>
-			<a class="btn" href="http://www.meetup.com/codeharbour/events/223514058/">RSVP</a>
-
-			<div class="box">
-				<h3 class="box__title">What to expect</h3>
-				<p>We start the meetups with a bit of general socialising. Food and drink is provided, so don't worry about eating first (unless you don't like pizza!).</p>
+					<div class="box">
+						<h3 class="box__title">What to expect</h3>
+						<p>The meetups with a bit of socialising along with food and drink. So don't worry about eating first (unless you don't like pizza!).</p>
+					</div>
+				</header>
 			</div>
-		</header>
-		{% assign sorted = site.talks | sort: "pub-date" | reverse %}
-		{% assign numTalks = 2 %}
-		{% for talk in sorted limit:numTalks %}
-			{% include talk-summary.html %}
-		{% endfor %}
-
+			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
+				{% assign sorted = site.talks | sort: "pub-date" | reverse %}
+				{% assign numTalks = 2 %}
+				{% for talk in sorted limit:numTalks %}
+					{% include talk-summary.html %}
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </section>
 

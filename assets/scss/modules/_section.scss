@@ -16,20 +16,20 @@
   }
 
   .section__header {
-    width: 38%;
-    float: left;
-    padding: 2em;
-    text-align: right;
+    text-align: left;
+
+    @include mq($bp-m) {
+      text-align: right;
+    }
   }
+}
+
+.section--next-meetup {
 
   .section__title {
-	font-size: 3em;
-    text-align: right;
+    line-height: 1;
   }
-
-  .section__content {
-    width: 62%;
-    float: right;
-    padding: 2em;
+  .talk ~ .talk {
+    margin-top: $spacing*2;
   }
 }

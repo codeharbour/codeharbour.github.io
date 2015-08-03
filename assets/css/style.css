@@ -478,7 +478,7 @@ th {
   /* line 20, /Users/su/Webbly/codeharbour/assets/scss/base/_grid.scss */
   .row ~ .row {
     padding-top: 0; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 67, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
     .row .span4-1 {
       width: 25%; }
@@ -531,7 +531,7 @@ th {
     .row .inline-show-at4 {
       display: inline;
       display: inline-block; } }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 43.75em) {
     /* line 67, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
     .row .span6-1 {
       width: 16.66667%; }
@@ -947,17 +947,17 @@ th {
 /* line 48, /Users/su/Webbly/codeharbour/assets/scss/base/_grid.scss */
 .row__colspaced {
   position: relative;
-  margin-left: -0.65em;
-  margin-right: -0.65em; }
+  margin-left: -1.95em;
+  margin-right: -1.95em; }
   /* line 54, /Users/su/Webbly/codeharbour/assets/scss/base/_grid.scss */
   .row__colspaced [class*="span"] {
-    padding-left: 0.65em;
-    padding-right: 0.65em; }
+    padding-left: 1.95em;
+    padding-right: 1.95em; }
 
 /* line 60, /Users/su/Webbly/codeharbour/assets/scss/base/_grid.scss */
 .row--pad {
   padding: 1.3em; }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 43.75em) {
     /* line 60, /Users/su/Webbly/codeharbour/assets/scss/base/_grid.scss */
     .row--pad {
       padding: 2.6em 1.3em; } }
@@ -1128,7 +1128,7 @@ h1 {
   /* line 9, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
   .lt-ie9 h1 {
     font-size: 3.157em; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 27, /Users/su/Webbly/codeharbour/assets/scss/base/_typography.scss */
     h1 {
       font-size: 3.157em; } }
@@ -1139,7 +1139,7 @@ h2 {
   /* line 9, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
   .lt-ie9 h2 {
     font-size: 2.369em; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 36, /Users/su/Webbly/codeharbour/assets/scss/base/_typography.scss */
     h2 {
       font-size: 2.369em; } }
@@ -1150,7 +1150,7 @@ h3 {
   /* line 9, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
   .lt-ie9 h3 {
     font-size: 1.777em; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 44, /Users/su/Webbly/codeharbour/assets/scss/base/_typography.scss */
     h3 {
       font-size: 1.777em; } }
@@ -1161,7 +1161,7 @@ h4 {
   /* line 9, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
   .lt-ie9 h4 {
     font-size: 1.333em; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 52, /Users/su/Webbly/codeharbour/assets/scss/base/_typography.scss */
     h4 {
       font-size: 1.333em; } }
@@ -1172,7 +1172,7 @@ h5, h6 {
   /* line 9, /Users/su/Webbly/codeharbour/assets/scss/helpers/_grid-mixins.scss */
   .lt-ie9 h5, .lt-ie9 h6 {
     font-size: 1em; }
-  @media screen and (min-width: 26.25em) {
+  @media screen and (min-width: 28.125em) {
     /* line 60, /Users/su/Webbly/codeharbour/assets/scss/base/_typography.scss */
     h5, h6 {
       font-size: 1em; } }
@@ -1362,19 +1362,18 @@ article h2 {
     background-color: #7ECECA; }
   /* line 18, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
   .section .section__header {
-    width: 38%;
-    float: left;
-    padding: 2em;
-    text-align: right; }
-  /* line 25, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
-  .section .section__title {
-    font-size: 3em;
-    text-align: right; }
-  /* line 30, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
-  .section .section__content {
-    width: 62%;
-    float: right;
-    padding: 2em; }
+    text-align: left; }
+    @media screen and (min-width: 43.75em) {
+      /* line 18, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
+      .section .section__header {
+        text-align: right; } }
+
+/* line 29, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
+.section--next-meetup .section__title {
+  line-height: 1; }
+/* line 32, /Users/su/Webbly/codeharbour/assets/scss/modules/_section.scss */
+.section--next-meetup .talk ~ .talk {
+  margin-top: 2.6em; }
 
 /* line 2, /Users/su/Webbly/codeharbour/assets/scss/modules/_sponsor.scss */
 .sponsor .sponsor__name {
