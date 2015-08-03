@@ -23,7 +23,12 @@
 }
 
 .btn--cta {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 1em 0;
   padding: .5em 1em .25em;
+
+  @include mq(em(500), true) {
+      font-size: 2em;
+  }
+
 }
