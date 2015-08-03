@@ -4,6 +4,10 @@
     text-align: center;
   }
 
+  .section__title {
+    line-height: 1;
+  }
+
   overflow: hidden;
   padding: 4em 0;
 
@@ -12,7 +16,11 @@
   }
 
   &.section--secondary {
-	background-color: $secondary;
+  	background-color: $secondary;
+
+    a {
+      @include links(darken($secondary, 40%));
+    }
   }
 
   .section__header {
@@ -26,9 +34,6 @@
 
 .section--next-meetup {
 
-  .section__title {
-    line-height: 1;
-  }
   .talk ~ .talk {
     margin-top: $spacing*2;
   }
