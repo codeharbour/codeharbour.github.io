@@ -1,32 +1,47 @@
 .site-header {
   background: #163D6A;
   color: white;
-
-  .logo {
-	color: white;
-	text-align: center;
-	font-size: 2em;
-	line-height: 2em;
-  }
+  text-align: center;
 
   .headline {
-	font-size: 3em;
-	text-align: center;
-	color: white;
-	margin: 1em;
+		font-size: 3em;
+		text-align: center;
+		color: white;
+		margin: 1em;
   }
 
   .description {
-	max-width: 28em;
-	text-align: center;
-	margin: 0 auto;
+		max-width: 28em;
+		text-align: center;
+		margin: 0 auto;
   }
 
   @include mq(em(500), true) {
 
-    .headline {
-      font-size: 4em;
+  .headline {
+     font-size: 4em;
     }
   }
+}
 
+.logo {
+	display: inline-block;
+	width: em(200);
+	height: em(200);
+	font-size: 1em;
+	background: url('/assets/img/codeharbour-logo.png') no-repeat;
+	background-size: contain;
+	position: relative;
+	margin: 0 0 0 -.5em;
+	@extend %ir;
+
+	@include mq($bp-s) {
+		width: em(250);
+		height: em(250);
+	}	
+
+	@include mq($bp-m) {
+		width: em(300);
+		height: em(300);
+	}
 }
