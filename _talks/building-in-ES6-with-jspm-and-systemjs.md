@@ -1,5 +1,5 @@
 ---
-title: "Get more from Git/GitHub"
+title: "Building in ES6 with jspm and SystemJS"
 speaker: "Jack Franklin"
 speaker-img: "jack.jpg"
 pub-date: 2015-07-29 20:00:00
