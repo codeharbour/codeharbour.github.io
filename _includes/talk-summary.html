@@ -3,10 +3,10 @@
   <div class="speaker profile">
     {% if talk.speaker-twitter %}
     <a href="https://twitter.com/{{ talk.speaker-twitter }}">
-    <img class="profile__img" src="{{ talk.speaker-img }}" alt="{{ talk.speaker }}">
+    <img class="profile__img" src="/assets/img/{{ talk.speaker-img }}" alt="{{ talk.speaker }}">
     </a>
     {% else %}
-    <img class="profile__img" src="{{ talk.speaker-img }}" alt="{{ talk.speaker }}">
+    <img class="profile__img" src="/assets/img/{{ talk.speaker-img }}" alt="{{ talk.speaker }}">
     {% endif %}
     <h2 class="profile__name">with {{ talk.speaker }}</h2>
   </div>

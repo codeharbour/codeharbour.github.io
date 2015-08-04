@@ -1,7 +1,7 @@
 ---
 title: "Get more from Git/GitHub"
 speaker: "Zach Holman"
-speaker-img: "/assets/img/zach.png"
+speaker-img: "zach.png"
 pub-date: 2015-07-29 20:01:00
 meetup-date: 2015-08-05
 ---

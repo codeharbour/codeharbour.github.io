@@ -1,7 +1,7 @@
 ---
 title: "Best viewed with..."
 speaker: "Adam Onishi"
-speaker-img: "/assets/img/adam_onishi.jpg"
+speaker-img: "adam_onishi.jpg"
 pub-date: 2015-06-29 20:00:00
 meetup-date: 2015-07-02
 ---

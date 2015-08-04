@@ -1,7 +1,7 @@
 ---
 title: "Get more from Git/GitHub"
 speaker: "Jack Franklin"
-speaker-img: "/assets/img/jack.jpg"
+speaker-img: "jack.jpg"
 pub-date: 2015-07-29 20:00:00
 meetup-date: 2015-08-05
 ---
