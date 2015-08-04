@@ -36,12 +36,12 @@
 	@extend %ir;
 
 	@include mq($bp-s) {
-		width: em(250);
-		height: em(250);
+		width: em(225);
+		height: em(225);
 	}	
 
 	@include mq($bp-m) {
-		width: em(300);
-		height: em(300);
+		width: em(250);
+		height: em(250);
 	}
 }
