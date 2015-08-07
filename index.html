@@ -22,7 +22,7 @@ layout: default
 			</div>
 			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
 				{% assign sorted = site.talks | sort: "pub-date" | reverse %}
-				{% assign numTalks = 2 %}
+				{% assign numTalks = 1 %}
 				{% for talk in sorted limit:numTalks %}
 					{% include talk-summary.html %}
 				{% endfor %}
