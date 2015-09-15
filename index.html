@@ -21,11 +21,30 @@ layout: default
 				</header>
 			</div>
 			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
+<!--
 				{% assign sorted = site.talks | sort: "pub-date" | reverse %}
 				{% assign numTalks = 1 %}
 				{% for talk in sorted limit:numTalks %}
 					{% include talk-summary.html %}
 				{% endfor %}
+-->
+				<article class="talk">
+				  <h1>Lightening Talks</h1>
+				  <div class="speaker profile">
+				  	<img class="profile__img" src="/assets/img/lightening-talks.png" alt="Lightening Talks">
+				  	<h2 class="profile__name">Have you got something to say?</h2>
+
+				  </div>
+				  <div class="talk__entry">
+				    <p>October sees the return of the popular 'Lightning talks'! We'll have a wide variety of talks that will last up to 10 minutes each.</p>
+
+						<p>Everyone is invited to submit a talk. We just need the title and a brief description of what you'll be covering. If you're interested in speaking please send your submission to us at <a href="mailto:hello@codeharbour.co.uk">hello@codeharbour.co.uk</a> or reply in the comments on <a href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">meetup.com</a></p>
+
+						<p>** This is a great opportunity for first time speakers! **</p>
+						<p>We will add details of the talks closer to the event</p>
+				  </div>
+				</article>
+
 			</div>
 		</div>
 	</div>
