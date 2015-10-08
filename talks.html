@@ -11,9 +11,9 @@ layout: internal
 <div class="row row--pad">
 	<div class="row__colspaced">
 
-		{% assign sorted = site.talks | sort: "pub-date" | reverse %}
+		{% assign sorted = site.posts | sort: "pub-date" | reverse %}
 
-		{% for talk in sorted %}
+		{% for post in sorted %}
 				<div class="span4-4 span6-2 span8-3 span12-4">
 					{% include talk-summary.html %}
 				</div>

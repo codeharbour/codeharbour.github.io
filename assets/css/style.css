@@ -1314,7 +1314,7 @@ article h2 {
   background: url("/assets/img/codeharbour-logo.png") no-repeat;
   background-size: contain;
   position: relative;
-  margin: 0 0 0 -.5em; }
+  margin: 2em 0 0 -.5em; }
   @media screen and (min-width: 28.125em) {
     /* line 27, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_header.scss */
     .logo {
@@ -1333,19 +1333,27 @@ article h2 {
   .internal-header .site-title {
     float: left;
     font-size: 1.25em;
-    line-height: 2.5em;
-    color: #fff; }
-  /* line 14, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+    line-height: 2.5em; }
+    /* line 11, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+    .internal-header .site-title a {
+      color: rgba(255, 255, 255, 0.4); }
+      /* line 14, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+      .internal-header .site-title a:hover {
+        color: #fff; }
+  /* line 22, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
   .internal-header nav ul {
     float: right; }
-    /* line 16, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+    /* line 24, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
     .internal-header nav ul li {
       display: inline-block;
       line-height: 2.5em;
       margin-left: 1em; }
-      /* line 21, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+      /* line 29, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
       .internal-header nav ul li a {
-        color: #fff; }
+        color: rgba(255, 255, 255, 0.4); }
+        /* line 32, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+        .internal-header nav ul li a:hover {
+          color: #fff; }
 
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_map.scss */
 #map_canvas {

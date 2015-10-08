@@ -7,10 +7,18 @@
 	float: left;
 	font-size: 1.25em;
 	line-height: 2.5em;
-	color: $white;
+
+	a {
+	  color: rgba($white, .4);
+
+	  &:hover {
+		color: $white;
+	  }
+	}
   }
 
   nav {
+
 	ul {
 	  float: right;
 	  li {
@@ -19,7 +27,11 @@
 		margin-left: 1em;
 
 		a {
-		  color: $white;
+		  color: rgba( $white, .4 );
+
+		  &:hover {
+			color: $white;
+		  }
 		}
 	  }
 	}

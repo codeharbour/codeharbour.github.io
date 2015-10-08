@@ -32,7 +32,7 @@
 	background: url('/assets/img/codeharbour-logo.png') no-repeat;
 	background-size: contain;
 	position: relative;
-	margin: 0 0 0 -.5em;
+	margin: 2em 0 0 -.5em;
 	@extend %ir;
 
 	@include mq($bp-s) {
