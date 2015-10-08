@@ -1,5 +1,21 @@
 ---
-layout: talk
+layout: internal
 ---
 
-<h1>The content</h1>
+<div class="row row--pad">
+
+	<h1>Talks</h1>
+
+</div>
+
+<div class="row row--pad">
+	<div class="row__colspaced">
+
+{% assign sorted = site.talks | sort: "pub-date" | reverse %}
+
+{% for talk in sorted %}
+		<div class="span4-4 span6-2 span8-3 span12-4">
+			{% include talk-summary.html %}
+		</div>
+{% endfor %}
+
