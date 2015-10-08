@@ -38,3 +38,19 @@
     margin-top: $spacing*2;
   }
 }
+
+.section--primary {
+	
+	h1 a {
+		color: $black;
+		
+		&:hover {
+			color: lighten($black, 20%);
+		}
+	}
+	
+	.profile .profile__img {
+		
+		border-color: rgba(#ddd, .7);
+	}
+}

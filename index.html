@@ -12,8 +12,9 @@ layout: default
 						<span class="meetup-meta__item">Time: </span>{{ site.data.meetup.event-start-date | date: "%k:%M" }} - {{ site.data.meetup.event-end-date | date: "%k:%M" }}<br>
 						<span class="meetup-meta__item">Location: </span><a href="#map_canvas">Find us</a>
 					</p>
+					{% if site.data.meetup.event-id %}
 					<a class="btn" href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">RSVP</a>
-
+					{% endif %}
 					<div class="box">
 						<h3 class="box__title">What to expect</h3>
 						<p>The meetup starts with a bit of socialising along with food and drink so don't worry about eating first (unless you don't like pizza!).</p>
