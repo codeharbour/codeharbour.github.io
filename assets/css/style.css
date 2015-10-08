@@ -14,7 +14,7 @@
 /*------------------------------------*\
     Global
 \*------------------------------------*/
-/* line 62, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/_settings.scss */
+/* line 63, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/_settings.scss */
 *,
 *:before,
 *:after {
@@ -1337,21 +1337,21 @@ article h2 {
     /* line 11, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
     .internal-header .site-title a {
       color: rgba(255, 255, 255, 0.4); }
-      /* line 14, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+      /* line 15, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
       .internal-header .site-title a:hover {
         color: #fff; }
-  /* line 22, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+  /* line 23, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
   .internal-header nav ul {
     float: right; }
-    /* line 24, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+    /* line 25, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
     .internal-header nav ul li {
       display: inline-block;
       line-height: 2.5em;
       margin-left: 1em; }
-      /* line 29, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+      /* line 30, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
       .internal-header nav ul li a {
         color: rgba(255, 255, 255, 0.4); }
-        /* line 32, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
+        /* line 33, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_internal-header.scss */
         .internal-header nav ul li a:hover {
           color: #fff; }
 
@@ -1446,6 +1446,16 @@ article h2 {
 /* line 37, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
 .section--next-meetup .talk ~ .talk {
   margin-top: 2.6em; }
+
+/* line 44, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+.section--primary h1 a {
+  color: #000; }
+  /* line 47, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+  .section--primary h1 a:hover {
+    color: #333333; }
+/* line 52, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_section.scss */
+.section--primary .profile .profile__img {
+  border-color: rgba(221, 221, 221, 0.7); }
 
 /* line 1, /Library/WebServer/Documents/codeharbour.github.io/assets/scss/modules/_social.scss */
 .social-icon {
