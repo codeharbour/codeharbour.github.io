@@ -25,7 +25,7 @@ layout: default
 				{% assign sorted = site.posts | sort: "pub-date" | reverse %}
 				{% assign numTalks = 1 %}
 				{% for post in sorted limit:numTalks %}
-					{% include talk-summary.html %}
+					{% include talk.html %}
 				{% endfor %}
 
 				<!--
