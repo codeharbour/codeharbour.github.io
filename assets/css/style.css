@@ -14,7 +14,7 @@
 /*------------------------------------*\
     Global
 \*------------------------------------*/
-/* line 62, /Users/wes/Development/sites/codeharbour/assets/scss/_settings.scss */
+/* line 63, /Users/wes/Development/sites/codeharbour/assets/scss/_settings.scss */
 *,
 *:before,
 *:after {
@@ -1417,6 +1417,16 @@ article h2 {
 /* line 37, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
 .section--next-meetup .talk ~ .talk {
   margin-top: 2.6em; }
+
+/* line 44, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
+.section--primary h1 a {
+  color: #000; }
+  /* line 47, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
+  .section--primary h1 a:hover {
+    color: #333333; }
+/* line 52, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
+.section--primary .profile .profile__img {
+  border-color: rgba(221, 221, 221, 0.7); }
 
 /* line 1, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_social.scss */
 .social-icon {
