@@ -54,3 +54,32 @@
 		border-color: rgba(#ddd, .7);
 	}
 }
+
+.section--talks-archive {
+	
+	.talk {
+		margin-top: $spacing*2;
+	}
+	
+	@include mq($bp-m) {
+	
+	.span6-3:nth-child(2n+1) {
+		clear: left;
+		}	
+	}
+
+
+	@include mq($bp-xl) {
+
+		.span12-4 {
+			
+			&:nth-child(2n+1) {
+				clear: none;
+			}
+			
+			&:nth-child(3n+1) {
+				clear: left;
+			}		
+		}
+	}	
+}

@@ -2,22 +2,19 @@
 layout: internal
 ---
 
-<div class="row row--pad">
-
-	<h1>Talks</h1>
-
-</div>
-
-<div class="row row--pad">
-	<div class="row__colspaced">
-
-		{% assign sorted = site.posts | sort: "pub-date" | reverse %}
-
-		{% for post in sorted %}
-				<div class="span4-4 span6-3 span12-4">
-					{% include talk-summary.html %}
-				</div>
-		{% endfor %}
-
+<section class="section section--talks-archive">
+	<div class="row row--pad">
+		<h1>Talks</h1>
+		<div class="row__colspaced">
+	
+			{% assign sorted = site.posts | sort: "pub-date" | reverse %}
+	
+			{% for post in sorted %}
+					<div class="span4-4 span6-3 span12-4">
+						{% include talk-summary.html %}
+					</div>
+			{% endfor %}
+	
+		</div>
 	</div>
-</div>
+</section>
