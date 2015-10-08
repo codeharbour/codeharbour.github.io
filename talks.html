@@ -14,7 +14,7 @@ layout: internal
 		{% assign sorted = site.posts | sort: "pub-date" | reverse %}
 
 		{% for post in sorted %}
-				<div class="span4-4 span6-2 span8-3 span12-4">
+				<div class="span4-4 span6-3 span12-4">
 					{% include talk-summary.html %}
 				</div>
 		{% endfor %}
