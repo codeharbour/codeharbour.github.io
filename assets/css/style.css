@@ -1337,21 +1337,21 @@ article h2 {
     /* line 11, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
     .internal-header .site-title a {
       color: rgba(255, 255, 255, 0.4); }
-      /* line 14, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
+      /* line 15, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
       .internal-header .site-title a:hover {
         color: #fff; }
-  /* line 22, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
+  /* line 23, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
   .internal-header nav ul {
     float: right; }
-    /* line 24, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
+    /* line 25, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
     .internal-header nav ul li {
       display: inline-block;
       line-height: 2.5em;
       margin-left: 1em; }
-      /* line 29, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
+      /* line 30, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
       .internal-header nav ul li a {
         color: rgba(255, 255, 255, 0.4); }
-        /* line 32, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
+        /* line 33, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_internal-header.scss */
         .internal-header nav ul li a:hover {
           color: #fff; }
 
@@ -1491,7 +1491,10 @@ article h2 {
   width: 16em;
   height: auto;
   float: left;
-  margin: 0 2em 2em 0; }
+  margin: 0 2em 3.5em 0; }
+/* line 13, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_sponsor.scss */
+.sponsor ~ .sponsor {
+  margin-top: 5.2em; }
 
 /* line 1, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_waves.scss */
 .waves {

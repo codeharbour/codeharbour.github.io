@@ -1,12 +1,16 @@
 .sponsor {
   .sponsor__name {
-	margin-top: 0px;
+		margin-top: 0px;
   }
 
   .sponsor__logo {
 	width: 16em;
 	height: auto;
 	float: left;
-	margin: 0 2em 2em 0;
+	margin: 0 2em 3.5em 0;
+  }
+  
+  & ~ .sponsor {
+	  margin-top: $spacing*4;
   }
 }
