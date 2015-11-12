@@ -26,7 +26,7 @@ layout: default
 				<p>This month we're in Maidstone with the help of our friends at <a href="http://squiders.com">Squiders</a>. There will be free transport to and from Maidstone from Holiday Extras - meeting at 6:00pm and getting us back at around 9:45. More details in the 'Finding Us' section below.</p><br><br>
 				
 				{% assign sorted = site.posts | sort: "pub-date" | reverse %}
-				{% assign numTalks = 1 %}
+				{% assign numTalks = 2 %}
 				{% for post in sorted limit:numTalks %}
 					{% include talk.html %}
 				{% endfor %}
