@@ -22,15 +22,42 @@ layout: default
 				</header>
 			</div>
 			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
-				<h1 class="section__title">codeHarbour on Tour!</h1>
-				<p>This month we're in Maidstone with the help of our friends at <a href="http://squiders.com">Squiders</a>. There will be free transport to and from Maidstone from Holiday Extras - meeting at 6:00pm and getting us back at around 9:45. More details in the 'Finding Us' section below.</p><br><br>
-				
+				{% assign numTalks = 0 %}
+
+				<!--
 				{% assign sorted = site.posts | sort: "pub-date" | reverse %}
-				{% assign numTalks = 2 %}
+				{% assign numTalks = 0 %}				
 				{% for post in sorted limit:numTalks %}
 					{% include talk.html %}
 				{% endfor %}
-				
+				-->
+
+
+				<article class="talk">
+				  <h1>Lightening Talks</h1>
+				  <div class="speaker profile">
+				  	<!-- <img class="profile__img" src="/assets/img/lightening-talks.png" alt="Lightening Talks"> -->
+				  	<h2 class="profile__name">CodeHarbour is back for 2016!</h2>
+
+				  </div>
+				  <div class="talk__entry">
+
+<p>We're going to be running  'Lightning talks' again this month. Lightning talks are  rapid-fire 5-10 minute talks. They're a great way to cover lots of content, and a great chance for first-time speakers to get some experience.
+</p>
+<p><strong>Please submit your talk ideas to <a href="mailto:hello@codeharbour.co.uk">hello@codeharbour.co.uk</a></strong></p>
+
+<p>Schedule for the night:</p>
+
+<ul>
+	<li>7:00 - Pizza, drinks and mingling</li>
+	<li>7:30 - 8:30 - Lightning talks</li> 
+	<li>8:30 - 9:00 - Discussion and socialising</li>
+</ul> 
+
+<p>Talk details will be announce here a few days before the meetup</p>
+
+				  </div>
+				</article>
 
 			</div>
 		</div>
@@ -50,21 +77,16 @@ layout: default
 			</div>
 		<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
 			<div class="section__content">
-				<p>For this event only we are in Maidstone. The address is:<br>
-					<address>The Art Lounge<br>
-					13 Market Buildings<br>
-					Maidstone<br>
-					Kent, ME14 1HP</address>
+				<p>We&rsquo;re hosted by the good people at Holiday Extras. The address is:<br>
+					<address>Holiday Extras<br>
+					Ashford Rd<br>
+					Newingreen<br>
+					Kent, CT21 4JF</address>
 				</p>
-				
-				<h2>Fancy a lift?</h2>
-				<p>We are putting on some transport from Holiday Extras for those in the Folkestone area that fancy coming along.  We'd love to see some of our regulars in Maidstone.  Road trip!  If you want to get a lift you will need to get yourself to Holiday Extras for 6pm.  <a href="mailto:hello@codeharbour.co.uk">Email us</a> to book your place!</p>
-<!--
 				<h3>From London</h3>
 				<p>The HS1 fast train from St Pancras gets you to Ashford. From there you can jump on the next train to Westenhanger. Send us a message on the <a href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">meetup.com</a> page - we might be able to give you a lift from Ashford.</p>
 				<h3>When you arrive at Holiday Extras</h3>
 				<p>From the carpark make your way around to the opposite side of the building, walking past the main front door.  You should see some decking with a door that goes into a breakout area. Look for people with pizza and beer.  You've made it!</p>
--->
 			</div>
 		</div>
 	</div>
@@ -87,12 +109,6 @@ layout: default
 						<a href="http://www.holidayextras.co.uk/"><img class="sponsor__logo" src="../assets/img/holidayextras.jpg"></a>
 						<p>Holiday Extras is the UK market leader for travel add-ons, and one of the biggest tech firms in Kent. HX have been a keen supporter of codeHarbour from the start, and we're very proud to now have them as our primary sponsor and host.</p>
 					</div>
-					
-					<div class="sponsor">
-						<h2 class="sponsor__name">Squiders</h2>
-						<a href="http://www.squiders.com/"><img class="sponsor__logo" src="../assets/img/squiders-logo-black.svg"></a>
-						<p>Squiders are a full stack studio, they take care of every aspect of your project in-house: from the first discovery meeting to research to design and development.</p>
-					</div>					
 
 				</div>
 			</div>
