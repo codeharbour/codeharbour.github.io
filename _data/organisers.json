@@ -1,16 +1,30 @@
 [
   {
-      "name": "Wesley Burden",
-      "twitter": "wesleyburden",
-      "img-url": "wesley.jpg",
-      "web-url": "http://nebulodesign.com",
-      "bio": "I make websites with a focus on usability, elegance and speed. Also running and bike riding.  That happens quite a lot."
-    },
+    "name": "Louis Pryer",
+    "twitter": "LouisPryer",
+    "img-url": "louisp.jpg",
+    "web-url": "https://github.com/LouisPryer",
+    "bio": ""
+  },
   {
-      "name": "Keith Devon",
-      "twitter": "keithdevon",
-      "img-url": "keith.jpg",
-      "web-url": "http://keithdevon.com",
-      "bio": "Keith builds results focused websites for medium sized businesses who want to improve their web ROI. When he's not working he's usually on his bike."
+    "name": "Tom Vance",
+    "twitter": "TomV94",
+    "img-url": "tomv.jpg",
+    "web-url": "",
+    "bio": ""
+  },
+  {
+    "name": "Sid Pandy",
+    "twitter": "_SiddharthP",
+    "img-url": "sidp.jpg",
+    "web-url": "",
+    "bio": ""
+  },
+  {
+    "name": "Chris Cunningham",
+    "twitter": "TheMightyFid",
+    "img-url": "chrisc.jpeg",
+    "web-url": "",
+    "bio": ""
   }
 ]
