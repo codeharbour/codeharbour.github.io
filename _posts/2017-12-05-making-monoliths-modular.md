@@ -1,7 +1,7 @@
 ---
 title: "Making Monoliths Modular"
 speaker: "Damian Casey"
-speaker-img: "damianC.jpg"
+speaker-img: "damianc.jpg"
 pub-date: 2017-12-05 10:00:00
 meetup-date: 2018-01-15
 layout: post
