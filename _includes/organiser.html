@@ -1,5 +1,11 @@
 <div class="profile organiser">
-  <h4 class="profile__name">{{organiser.name}} | <a href="https://twitter.com/{{organiser.twitter}}">@{{organiser.twitter}}</a></h4>
+  <h4 class="profile__name">{{organiser.name}} | 
+  {% if organiser.twitter != "" %}
+  <a href="https://twitter.com/{{organiser.twitter}}">@{{organiser.twitter}}</a>
+  {% else %}
+  <a href="https://linkedin.com/in/{{organiser.linkedin}}">@{{organiser.linkedin}}</a>
+  {% endif %}
+</h4>
 
   <img class="profile__img" src="/assets/img/{{organiser.img-url}}" alt="{{organiser.name}}">
   <!-- <p class="profile__bio">{{organiser.bio}}</p> -->
