@@ -82,7 +82,9 @@
  */
 /* line 9, /Users/wes/Development/sites/codeharbour/assets/scss/base/__normalize.scss */
 html {
-  font-family: sans-serif;
+  font-family: BundaySans-SemiBoldUp, sans-serif;
+  font-weight: normal;
+  font-style: normal;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -94,8 +96,8 @@ html {
  */
 /* line 19, /Users/wes/Development/sites/codeharbour/assets/scss/base/__normalize.scss */
 body {
-  margin: 0; }
-
+  margin: 0; 
+}
 /* HTML5 display definitions
    ========================================================================== */
 /**
