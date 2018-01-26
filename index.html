@@ -25,13 +25,12 @@ layout: default
 			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
 				<article class="talk">
 				  <div class="speaker profile">
-				  	<h2 class="profile__name">CodeHarbour is back for 2018, under new management!</h2>
+				  	<h2 class="profile__name">codeHarbour comes to Folkestone!</h2>
 				  </div>
 				  <div class="talk__entry">
 						<p>
-							After a long delay, codeHarbour returns.
-							Same as you remembered it, but under new management.
-							We have some exciting talks lined up for our first event.
+							This months event brings us to Folkestone at The Quarterhouse.
+							We have some exciting talks lined up for you this month, suitable for all audiences regardless of tech knowledge. Don't miss out!
 						</p>
 				  </div>
 				</article>
@@ -53,14 +52,16 @@ layout: default
 								7:00 - 7:30 - Pizza, drinks and mingling
 							</li>
 							<li>
-								7:30 - 8:00 - Making Monoliths Modular by
-								<a href="https://twitter.com/damian_casey">Damian Casey</a>
+								7:30 - 8:00 - Future Folkestone by
+								<a href="https://twitter.com/struanbartlett">Struan Bartlett</a>
+								and
+								<a href="https://twitter.com/al_upton">Alastair Upton</a>
 							</li>
 							<li>
 								8:00 - 8:15 - Intermission
 							<li>
-								8:15 - 8:45 - Automate Awesomeness with Ansible by
-								<a href="https://twitter.com/elepedus">Edmond Lepedus</a>
+								8:15 - 8:45 - Gamification in the Real World by
+								<a href="https://twitter.com/SStobie">Stuart Stobie</a>
 							</li>
 							<li>
 								8:45 - 9:00 - Discussion and socialising
@@ -77,27 +78,7 @@ layout: default
 
 <section class="section section--secondary">
 	<h1>Finding us</h1>
-	<div class="row row--pad">
-		<div class="row__colspaced">
-			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
-				<div class="section__content">
-					<p>We&rsquo;re hosted by the good people at Holiday Extras. The address is:<br>
-						<address>
-							Holiday Extras<br>
-							Ashford Rd<br>
-							Newingreen<br>
-							Kent, CT21 4JF
-						</address>
-					</p>
-					<h3>From London</h3>
-					<p>The HS1 fast train from St Pancras gets you to Ashford. From there you can jump on the next train to Westenhanger. Send us a message on the <a href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">meetup.com</a> page - we might be able to give you a lift from Ashford.</p>
-					<h3>When you arrive at Holiday Extras</h3>
-					<p>
-						From the carpark, make your way to the main front entrance and follow the signs for codeHarbour. Look for people with pizza and beer.  You've made it!
-					</p>
-				</div>
-			</div>
-	</div>
+	{% include quarterhouse.html %}
 </section>
 
 <section class="section">

@@ -2,13 +2,23 @@
   <h1>{{ post.title }}</h1>
   <div class="speaker profile">
     {% if post.speaker-twitter %}
-    <a href="https://twitter.com/{{ post.speaker-twitter }}">
-    <img class="profile__img" src="/assets/img/{{ post.speaker-img }}" alt="{{ post.speaker }}">
+      <a href="https://twitter.com/{{ post.speaker-twitter }}">
+      <img class="profile__img" src="/assets/img/{{ post.speaker-img }}" alt="{{ post.speaker }}">
+      {% if post.second-speaker-img %}
+        <img class="profile__img" src="/assets/img/{{ post.second-speaker-img }}" alt="{{ post.second-speaker }}">
+      {% endif %}
     </a>
     {% else %}
-    <img class="profile__img" src="/assets/img/{{ post.speaker-img }}" alt="{{ post.speaker }}">
+      <img class="profile__img" src="/assets/img/{{ post.speaker-img }}" alt="{{ post.speaker }}">
+      {% if post.second-speaker-img %}
+        <img class="profile__img" src="/assets/img/{{ post.second-speaker-img }}" alt="{{ post.second-speaker }}">
+      {% endif %}
     {% endif %}
-    <h2 class="profile__name">with {{ post.speaker }}</h2>
+    {% if post.second-speaker %}
+      <h2 class="profile__name">with {{ post.speaker }} and {{ post.second-speaker}}</h2>
+    {% else %}
+      <h2 class="profile__name">with {{ post.speaker }}</h2>
+    {% endif %}
   </div>
   <div class="talk__entry">
     {{ post.content }}
