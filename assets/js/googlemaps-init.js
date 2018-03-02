@@ -1,6 +1,6 @@
 var bittersMap = (function () {
-  var myLatlng = new google.maps.LatLng(51.0812236, 1.1810566),
-      mapCenter = new google.maps.LatLng(51.0812236, 1.1810566),
+  var myLatlng = new google.maps.LatLng(51.298195, 1.0673458),
+      mapCenter = new google.maps.LatLng(51.298195, 1.0673458),
       mapCanvas = document.getElementById('map_canvas'),
       mapOptions = {
         center: mapCenter,
@@ -17,11 +17,11 @@ var bittersMap = (function () {
           '</div>'+
           '<h1 id="firstHeading" class="firstHeading">codeHarbour</h1>'+
           '<div id="bodyContent"'+
-          '<p>Quarterhouse</p>'+
-          '<p>Mill Bay</p>'+
-          '<p>Folkestone</p>'+
+          '<p>Gulbenkian</p>'+
+          '<p>University of Kent</p>'+
+          '<p>Canterbury</p>'+
           '<p>Kent</p>'+
-          '<p>CT20 1BN</p>'+
+          '<p>CT2 7NB</p>'+
           '</div>'+
           '</div>',
       infowindow = new google.maps.InfoWindow({
