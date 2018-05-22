@@ -1,6 +1,6 @@
 var bittersMap = (function () {
-  var myLatlng = new google.maps.LatLng(51.086534, 1.034738),
-      mapCenter = new google.maps.LatLng(51.086534, 1.034738),
+  var myLatlng = new google.maps.LatLng(51.0812236, 1.1810566),
+      mapCenter = new google.maps.LatLng(51.0812236, 1.1810566),
       mapCanvas = document.getElementById('map_canvas'),
       mapOptions = {
         center: mapCenter,
@@ -17,11 +17,11 @@ var bittersMap = (function () {
           '</div>'+
           '<h1 id="firstHeading" class="firstHeading">codeHarbour</h1>'+
           '<div id="bodyContent"'+
-          '<p>Holiday Extras</p>'+
-          '<p>Ashford Rd</p>'+
-          '<p>Newingreen</p>'+
+          '<p>Quarterhouse</p>'+
+          '<p>Mill Bay</p>'+
+          '<p>Folkestone</p>'+
           '<p>Kent</p>'+
-          '<p>CT21 4JF</p>'+
+          '<p>CT20 1BN</p>'+
           '</div>'+
           '</div>',
       infowindow = new google.maps.InfoWindow({
