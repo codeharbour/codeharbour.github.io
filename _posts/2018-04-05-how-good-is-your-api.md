@@ -1,7 +1,7 @@
 ---
 title: "How good is your API?"
-speaker: "Caroline Woodhams"
-speaker-img: "carolineWoodhams.jpeg"
+speaker: "Caroline Clark"
+speaker-img: "carolineClark.jpeg"
 pub-date: 2018-04-06 09:00:00
 meetup-date: 2018-04-18
 layout: post
