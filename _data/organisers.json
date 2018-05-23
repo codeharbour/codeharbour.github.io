@@ -2,33 +2,23 @@
   {
     "name": "Louis Pryer",
     "twitter": "LouisPryer",
-    "linkedin":"",
     "img-url": "louisp.jpg",
-    "web-url": "https://github.com/LouisPryer",
-    "bio": ""
+    "web-url": "https://github.com/LouisPryer"
   },
   {
     "name": "Tom Vance",
     "twitter": "TomV94",
-    "linkedin":"",
-    "img-url": "tomv.jpg",
-    "web-url": "",
-    "bio": ""
+    "img-url": "tomv.jpg"
   },
   {
     "name": "Sid Pandy",
     "twitter": "_SiddharthP",
-    "linkedin":"",
-    "img-url": "sidp.jpg",
-    "web-url": "",
-    "bio": ""
+    "img-url": "sidp.jpg"
   },
   {
     "name": "Chris Cunningham",
-    "twitter": "",
     "linkedin":"chrisdcunningham",
     "img-url": "chrisc.jpg",
-    "web-url": "https://www.linkedin.com/in/chrisdcunningham/",
-    "bio": ""
+    "web-url": "https://www.linkedin.com/in/chrisdcunningham/"
   }
 ]
