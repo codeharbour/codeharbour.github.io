@@ -12,12 +12,14 @@
   },
   {
     "name": "Sid Pandy",
-    "twitter": "_SiddharthP",
-    "img-url": "sidp.jpg"
+    "twitter": "SiddharthP28",
+    "img-url": "sidp.jpg",
+    "web-url": "http://www.siddharthpandey.net/"
   },
   {
     "name": "Chris Cunningham",
     "linkedin":"chrisdcunningham",
+    "twitter": "TheMightyFid"
     "img-url": "chrisc.jpg",
     "web-url": "https://www.linkedin.com/in/chrisdcunningham/"
   }
