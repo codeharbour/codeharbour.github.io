@@ -1510,7 +1510,7 @@ display:none;	}
 .waves {
   width: 100%;
   height: 25vh;
-  min-height: 10em;
+  min-height: 125px;
   position: relative;
   overflow: hidden;
   text-align: center; }
