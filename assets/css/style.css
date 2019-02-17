@@ -1686,3 +1686,7 @@ float: none
 .section--hasNextMeetup{
 	display:none
 }
+
+.socialCol{
+	width:33%
+}
