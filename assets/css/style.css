@@ -1677,3 +1677,9 @@ display:none;	}
 /* No files to import found in ../lib/*\/* */
 
 /*# sourceMappingURL=style.css.map */
+
+.organiserRow{
+text-align:center}
+.organiserRow .profile .profile__img{
+float: none
+}
