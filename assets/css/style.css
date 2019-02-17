@@ -1316,7 +1316,7 @@ article h2 {
   background: url("/assets/img/codeharbour-logo.png") no-repeat;
   background-size: contain;
   position: relative;
-  margin: 10px 0px }
+  margin: 20px 0px }
   @media screen and (min-width: 28.125em) {
     /* line 27, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_header.scss */
     .logo {
