@@ -1294,7 +1294,7 @@ article h2 {
     font-size: 3em;
     text-align: center;
     color: white;
-    margin: 1em; }
+    margin: 20px 0px;}
   /* line 13, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_header.scss */
   .site-header .description {
     max-width: 28em;
