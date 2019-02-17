@@ -26,17 +26,19 @@
 
 	<h1>Organised by</h1>
 
-	<div class="row row--pad">
-
-		<div class="row__colspaced">
+	<div class="organiserRow">
+	<!--<div class="row row--pad">
+		<div class="row__colspaced">-->
 
 			{% for organiser in site.data.organisers %}
-			<div class="span4-4 span6-3 span12-6">
+			<div>
+			<!--<div class="span4-4 span6-3 span12-6">-->
 				{% include organiser.html %}
 			</div>
 			{% endfor %}
 
-		</div>
+		<!-- </div> 
+	</div>-->
 	</div>
 
 </footer>
