@@ -1361,7 +1361,8 @@ article h2 {
 /* line 1, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_map.scss */
 #map_canvas {
   height: 400px;
-  width: 100%; }
+  width: 100%;
+display:none  }
 
 /* line 6, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_map.scss */
 #map_canvas img {
@@ -1432,6 +1433,9 @@ display:none	}
     background-color: #44B5C4; }
   /* line 18, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
   .section.section--secondary {
+    background-color: #7ECECA;
+display:none;	}
+	.section.section--secondary .row--pad {
     background-color: #7ECECA; }
     /* line 21, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
     .section.section--secondary a {
