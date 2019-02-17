@@ -1433,8 +1433,7 @@ display:none	}
     background-color: #44B5C4; }
   /* line 18, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
   .section.section--secondary {
-    background-color: #7ECECA;
-display:none;	}
+    background-color: #7ECECA;}
 	.section.section--secondary .row--pad {
     background-color: #7ECECA; }
     /* line 21, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
@@ -1682,4 +1681,8 @@ display:none;	}
 text-align:center}
 .organiserRow .profile .profile__img{
 float: none
+}
+
+.section--hasNextMeetup{
+	display:none
 }
