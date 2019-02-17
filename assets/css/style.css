@@ -1425,7 +1425,8 @@ article h2 {
   .section .section__title {
     line-height: 1; }
 	 .section.section--next-meetup {
-    padding: 0px }
+    padding: 0px;
+display:none	}
   /* line 14, /Users/wes/Development/sites/codeharbour/assets/scss/modules/_section.scss */
   .section.section--primary {
     background-color: #44B5C4; }
