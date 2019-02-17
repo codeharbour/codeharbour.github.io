@@ -1688,5 +1688,7 @@ float: none
 }
 
 .socialCol{
-	width:33%
+	width:33%;
+	display: inline-block;
+vertical-align: middle;
 }
