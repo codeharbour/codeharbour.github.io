@@ -1,0 +1,106 @@
+---
+layout: default
+---
+<section class="section section--next-meetup">
+	<div class="row row--pad">
+		<div class="row__colspaced">
+			<div class="span4-4 span6-2 span8-3 span12-4">
+				<header class="section__header">
+					<a name="next"></a>
+					<h1 class="section__title">Next meetup</h1>
+					<p class="meetup-meta">
+						<span class="meetup-meta__item">Date: </span>{{ site.data.meetup.event-start-date | date: "%a %b %-d, %Y" }}<br>
+						<span class="meetup-meta__item">Time: </span>{{ site.data.meetup.event-start-date | date: "%k:%M" }} - {{ site.data.meetup.event-end-date | date: "%k:%M" }}<br>
+						<span class="meetup-meta__item">Location: </span><a href="#map_canvas">Find us</a>
+					</p>
+					{% if site.data.meetup.event-id %}
+					<a class="btn" href="{{ site.data.meetup.meetup-url }}/events/{{ site.data.meetup.event-id }}">RSVP</a>
+					{% endif %}
+					<div class="box">
+						<h3 class="box__title">What to expect</h3>
+						<p>The meetup starts with a bit of socialising along with food and drink so don't worry about eating first (unless you don't like pizza!).</p>
+					</div>
+				</header>
+			</div>
+			<div class="span4-4 span6-4 span8-5 span12-7 push12-1">
+				<article class="talk">
+				  <div class="speaker profile">
+				  	<h2 class="profile__name">codeHarbour: Open Quarter 2018</h2>
+				  </div>
+				  <div class="talk__entry">
+						<p>
+							We're excited to be a part of the <a href="http://www.creativequarterfolkestone.org.uk/open-quarter/">Open Quarter</a> festival in Folkestone this June.
+							Pop by the Clearing at the Quarterhouse in Folkestone, where we will have our usual format, featuring some fantastic speakers and topics.
+						</p>
+				  </div>
+				</article>
+
+				{% assign sorted = site.posts | sort: "pub-date" | reverse %}
+				{% assign numTalks = 2 %}
+				{% for post in sorted limit:numTalks %}
+					{% include talk.html %}
+				{% endfor %}
+
+				<article class="talk">
+				  <div class="speaker profile">
+				  	<h2 class="profile__name">Schedule for the night:</h2>
+				  </div>
+				  <div class="talk__entry">
+						<p></p>
+						<ul>
+							<li>
+								7:00 - 7:30 - Pizza, drinks and mingling
+							</li>
+							<li>
+								7:30 - 8:00 - Tech-x and the City: An insight into computation in finance by
+								<a href="https://twitter.com/OllieFritz">Oliver Fritz</a>
+							</li>
+							<li>
+								8:00 - 8:15 - Intermission
+							<li>
+								8:15 - 8:45 - A journey into functional programming by
+								<a href="https://twitter.com/DrBloke">Sam Tracey</a>
+							</li>
+							<li>
+								8:45 - 9:00 - Discussion and socialising
+							</li>
+						</ul>
+				  </div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="map_canvas"></div>
+
+<section class="section section--secondary section--hasNextMeetup">
+	<h1>Finding us</h1>
+	{% include quarterhouse.html %}
+</section>
+
+<section class="section">
+	<a name="sponsors"></a>
+	<h1>Sponsors</h1>
+	{% include sponsors.html %}
+</section>
+
+<section class="section section--primary">
+	<h1>Previous talks</h1>
+
+	<div class="row row--pad">
+		<div class="row__colspaced">
+
+			{% for post in sorted limit:3 offset:numTalks %}
+			<div class="span4-4 span6-3 span12-4">
+				{% include talk-summary.html %}
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+
+	<p class="centered">
+		<a class="btn btn--cta" href="/talks.html">View the archive</a>
+	</p>
+</section>
