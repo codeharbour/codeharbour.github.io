@@ -1,0 +1,74 @@
+[
+   {
+    "title": "Making Monoliths Modular",
+    "speaker": "Damian Casey",
+	"twitter" : "",
+	"speaker-img": "damianc.jpg",
+    "pub-date": "2017-12-05 10:00:00",
+    "meetup-date": "2018-01-15",
+	"desc": "Many companies face the challenge of working with monolithic systems and over time they build up years of tech debt and become difficult to work with. I'd like to give some examples from my experience of how taking a modular approach can improve the developer experience"
+  },
+  {
+    "title": "Automate Awesomeness with Ansible",
+    "speaker": "Edmond Lepedus",
+	"twitter" : "",
+	"speaker-img": "edmondL.jpg",
+    "pub-date": "2017-12-05 09:00:00",
+    "meetup-date": "2018-01-15",
+	"desc": "Edmond is going to discuss how to use Ansible for automating best practices which would otherwise be far too time-consuming and error prone."
+  },
+	{
+    "title": "Gamification in the Real World",
+    "speaker": "Stuart Stobie",
+	"twitter": "",
+	"speaker-img": "stuartS.jpeg",
+    "pub-date": "2018-01-26 09:00:00",
+    "meetup-date": "2018-02-25",
+	"desc": "Gamification. Just a buzzword? Or is it a silver bullet for businesses in the 21st century? Unsurprisingly it’s neither. Gamification aims to make the tedious entertaining but making anything fun is not as simple as it sounds. In this talk we'll take a look at the misconceptions surrounding gamification, the fascinating psychology behind it and the lessons we really should be learning from the games that inspire it."
+  } ,
+ {
+    "title": "Remotely Interesting",
+    "speaker": "Chrissy Garnett",
+	"twitter": "",
+	"speaker-img": "chrissyGarnett.jpg",
+    "pub-date": "2018-02-21 10:00:00",
+    "meetup-date": "2018-03-12",
+	"desc": "This is a case study from Holiday Extras on our Bulgarian and UK remote teams over the last 18 months. We'll be sharing the change curve in attitudes and how not only the scrum masters had to get used to remote workers, but the dev team had to get used to remote pair programming. We'll be delving into the challenges we faced and the changes for the better."
+  },
+  {
+    "title": "How good is your API?",
+    "speaker": "Caroline Clark",
+	"twitter": "",
+	"speaker-img": "carolineClark.jpeg",
+    "pub-date": "2018-04-06 09:00:00",
+    "meetup-date": "2018-04-18",
+	"desc": "The integrations team at Holiday Extras works extensively with third party APIs. To help us assess their quality we've developed a tool, and during this talk will walk you through a live demonstration of how to use it, taking our own API as the use case. "
+  },
+  {
+    "title": "APIs 2.0",
+    "speaker": "Tom Vance",
+	"twitter": "",
+	"speaker-img": "tomv.jpg",
+    "pub-date": "2018-04-05 09:00:00",
+    "meetup-date": "2018-04-18",
+	"desc": "When building and delivering front end applications (web apps, mobile apps) the last thing we want to worry about is building and hosting a supporting API.Introducing the solutions to your problems, Google Cloud Functions and AWS Lambda."
+  },
+  	{
+    "title": "Tech-x and the City: An insight into computation in finance",
+    "speaker": "Oliver Fritz",
+	"twitter": "OllieFritz",
+	"speaker-img": "oliverFritz.jpg",
+    "pub-date": "2018-06-06 09:00:00",
+    "meetup-date": "2018-06-20",
+	"desc": "Technology has rapidly become integral to the world of finance, with it being a mainstay in most every aspect.This talk will give an outline of the most interesting facets of computational finance, such as algorithmic and high-frequency trading, and focus on my research into the effect of news sentiments on financial markets."
+  },
+    {
+    "title": "A journey into functional programming",
+    "speaker": "Sam Tracey",
+	"twitter": "DrBloke",
+	"speaker-img": "samTracey.jpg",
+    "pub-date": "2018-06-05 09:00:00",
+    "meetup-date": "2018-06-20",
+	"desc": "Functional programming offers a very different approach to writing code. Seasoned programmers have reported that learning its techniques has made them feel like beginners. And yet more and more people are taking the plunge to make it part of their skill set, more employers are demanding it as a skill, and many are saying that learning it has brought joy to their coding lives."
+  }
+]
